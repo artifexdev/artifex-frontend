@@ -11,12 +11,17 @@ export class ProjectConfig extends SeedConfig {
 
   PROJECT_TASKS_DIR = join(process.cwd(), this.TOOLS_DIR, 'tasks', 'project');
 
+  FONTS_DEST = `${this.APP_DEST}/fonts`;
+  FONTS_SRC = [
+      'src/client/fonts/**'
+  ];
+
   constructor() {
     super();
-    // this.APP_TITLE = 'Put name of your app here';
+    this.APP_TITLE = 'Artifex Profesional Agency - Hire Us!';
     let additional_deps: InjectableDependency[] = [
-      // {src: 'jquery/dist/jquery.min.js', inject: 'libs'},
-      // {src: 'lodash/lodash.min.js', inject: 'libs'},
+      {src: 'jquery/dist/jquery.min.js', inject: 'libs'},
+      {src: 'lodash/lodash.min.js', inject: 'libs'},
     ];
 
     const seedDependencies = this.NPM_DEPENDENCIES;

@@ -143,6 +143,12 @@ export class SeedConfig {
   CSS_SRC = `${this.APP_SRC}/css`;
 
   /**
+   * The folder of the applications css files.
+   * @type {string}
+   */
+  JS_SRC = `${this.APP_SRC}/js`;
+
+  /**
    * The directory of the applications tools
    * @type {string}
    */
@@ -259,7 +265,26 @@ export class SeedConfig {
    * @type {InjectableDependency[]}
    */
   APP_ASSETS: InjectableDependency[] = [
-    { src: `${this.CSS_SRC}/main.css`, inject: true, vendor: false }
+    // CSS
+    { src: `${this.CSS_SRC}/bootstrap.css`, inject: true, vendor: false },
+    { src: `${this.CSS_SRC}/socicon.css`, inject: true, vendor: false },
+    { src: `${this.CSS_SRC}/iconsmind.css`, inject: true, vendor: false },
+    { src: `${this.CSS_SRC}/interface-icons.css`, inject: true, vendor: false },
+    { src: `${this.CSS_SRC}/owl.carousel.css`, inject: true, vendor: false },
+    { src: `${this.CSS_SRC}/lightbox.min.css`, inject: true, vendor: false },
+    { src: `${this.CSS_SRC}/theme.css`, inject: true, vendor: false },
+    { src: `${this.CSS_SRC}/fonts.css`, inject: true, vendor: false },
+
+    // JS
+    { src: `${this.JS_SRC}/isotope.min.js`, inject: true, vendor: false },
+    { src: `${this.JS_SRC}/ytplayer.min.js`, inject: true, vendor: false },
+    { src: `${this.JS_SRC}/owl.carousel.min.js`, inject: true, vendor: false },
+    { src: `${this.JS_SRC}/lightbox.min.js`, inject: true, vendor: false },
+    { src: `${this.JS_SRC}/twitterfetcher.min.js`, inject: true, vendor: false },
+    { src: `${this.JS_SRC}/smooth-scroll.min.js`, inject: true, vendor: false },
+    { src: `${this.JS_SRC}/scrollreveal.min.js`, inject: true, vendor: false },
+    { src: `${this.JS_SRC}/parallax.js`, inject: true, vendor: false },
+    { src: `${this.JS_SRC}/scripts.js`, inject: true, vendor: false },
   ];
 
   /**
