@@ -33,7 +33,7 @@ In order to start the seed use:
 
 
 ```bash
-git clone --depth 1 https://github.com/mgechev/angular2-seed.git
+git clone --depth 1 git@github.com:artifexdev/artifex-frontend.git
 cd angular2-seed
 # install the project's dependencies
 npm install
