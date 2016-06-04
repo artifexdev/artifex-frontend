@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/artifexdev/artifex-frontend.png?label=ready&title=Ready)](https://waffle.io/artifexdev/artifex-frontend)
 # Introduction
 
 [![Angular 2 Style Guide](https://mgechev.github.io/angular2-style-guide/images/badge.svg)](https://angular.io/styleguide)
